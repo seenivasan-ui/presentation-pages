@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* MAIN CARD */
+.container {
+  background: #ffffff;
+  max-width: 750px;
+  padding: 35px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* CARD HOVER */
+.container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* TITLE */
+h1 {
+  font-size: 2.7rem;
+  color: #203a43;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* IMAGE */
+.image-box img {
+  width: 240px;
+  border-radius: 14px;
+  border: 4px solid #203a43;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* IMAGE HOVER */
+.image-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* CONTENT BOX */
+.content {
+  margin-top: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+  border-radius: 14px;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+/* CONTENT HOVER */
+.content:hover {
+  background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+  transform: scale(1.02);
+}
+
+/* TEXT */
+.content p {
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* HIGHLIGHTED QUOTE */
+.quote {
+  background: #111111;          /* Solid dark background */
+  color: #ffffff;               /* PURE WHITE text */
+  padding: 18px 22px;
+  border-radius: 12px;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+/* QUOTE HOVER */
+.quote:hover {
+  background: #000000;          /* Even darker on hover */
+  transform: scale(1.02);
+}
+.quote,
+.quote p {
+  color: #ffffff !important;
+}
+.quote {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
